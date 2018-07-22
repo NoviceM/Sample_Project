@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/name"
+            android:inputType="textCapCharacters"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/your_name"/>
+          <View
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@string/quiz_one">
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="@string/quiz_one"
+                 android:textSize="30sp"/>
+             <RadioGroup
+                  android:layout_height="wrap_content"
+                  android:layout_width="wrap_content"
+                  android:orientation="vertical">
+                 <RadioButton
+                     android:quiz="@+id/apple"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="@string/apple"/>
+                 <RadioButton
+                     android:quiz="@+id/google"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="@string/google"/>
+                 <RadioButton
+                     android:quiz="@+id/android_inc"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="@string/android_inc"/>
+                 <RadioButton
+                     android:quiz="@+id/nokia"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="@string/nokia"/>
+             </RadioGroup>
+         </View>
+
+     </LinearLayout>
+
+ </ScrollView>
